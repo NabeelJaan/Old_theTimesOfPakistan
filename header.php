@@ -57,7 +57,7 @@
 
 						<?php } else { ?>
 
-							<a href="<?php echo get_bloginfo( 'url' ); ?>" class="font-bold text-3xl uppercase">
+							<a href="<?php echo get_bloginfo( 'url' ); ?>" class="site-logo font-bold text-4xl text-green">
 								<?php echo get_bloginfo( 'name' ); ?>
 							</a>
 

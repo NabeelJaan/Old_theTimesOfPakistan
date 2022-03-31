@@ -6,7 +6,7 @@
 <section id="<?php echo esc_attr($id); ?>" class="px-2 xl:px-0 pb-16">
     <div class="md:max-w-6xl md:mx-auto"> <!-- container -->
         <div class="lg:flex">
-            <div class="lg:w-3/3 border rounded shadow border-grey-100 p-4 md:mr-6 lg:mr-4 xl:mr-8">
+            <div class="lg:w-3/3 border bg-white rounded shadow border-grey-100 p-4 md:mr-6 lg:mr-4 xl:mr-8">
                 <h2 class="font-bold font-Roboto text-3xl border-b-2 border-green mb-8 pb-2"><?php the_field('section_title_lp'); ?></h2>
 
                     <?php
@@ -52,14 +52,14 @@
                     endif;
                     ?>
 
-                <a id="loadMore" class="transition ease-in-out duration-500 font-bold text-xl border border-green inline-block py-2 px-6 rounded-full hover:bg-green hover:text-white" href="<?php the_permalink(); ?>">Load More</a>
+                <a id="loadMore" class="transition ease-in-out duration-500 text-center font-bold text-xl leading-0 border border-green block py-2 px-6 hover:bg-green hover:text-white" href="<?php the_permalink(); ?>">Load More</a>
             </div>
             
 
 
             <div class="lg:w-1/03"> <!-- col-2 -->
 
-                 <div class="border rounded shadow border-grey-100 my-4 md:my-0 p-4">
+                 <div class="border rounded bg-white shadow border-grey-100 my-4 md:my-0 p-4">
                      <h2 class="font-semibold font-Jost border-b-2 border-green pb-2">Follow Us</h2>
                      <div class="grid grid-flow-col grid-cols-2 grid-rows-2 gap-2.5 my-4">
                          <a href="#">

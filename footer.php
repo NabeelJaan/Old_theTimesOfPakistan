@@ -2,7 +2,8 @@
 	<div class="bg-black-russian px-4 xl:px-0">
 		<div class="md:max-w-6xl md:mx-auto">
 			<div class="py-16 md:max-w-3xl md:mx-auto text-center">
-<!-- 				<img class="mx-auto" src="<?php bloginfo('template_directory'); ?>/resources/images/techbasket-footer-logo.png" alt="Logo"> -->
+				<!-- <img class="mx-auto" src="<?php bloginfo('template_directory'); ?>/resources/images/techbasket-footer-logo.png" alt="Logo"> -->
+				<p class="site-logo text-green font-bold text-6xl">The Times Of Pakistan</p>
 				<p class="my-6 font-Jost tracking-wide">The Times Of Pakistan, Pakistan Based Tech and News website. Our main goal is "We Update you about Technology, Business, Auto, Mobile, Current affairs News from Pakistan and all over the World.</p>
 				<p class="mb-6 font-Jost tracking-wide">Contact Us: <a href="mailto:contact@thetimesofpaksitan.pk">contact@thetimesofpaksitan.pk</a></p>
 				<div class="text-sm space-x-2 md:mt-6">

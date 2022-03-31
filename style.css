@@ -6,8 +6,34 @@ Version: 1.0.0
 License: MIT
 */
 
+
+::-webkit-scrollbar {
+	width: 15px !important;
+}
+::-webkit-scrollbar-track {
+	background-color: #1F2024;
+}
+::-webkit-scrollbar-thumb {
+	background-color: #86C540;
+	border-radius: 10px;
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+
+@font-face {
+	font-family: Engravers;
+	src: url(fonts/engravers.ttf);
+}
+
+body {
+	background-color: #f1f1f1;
+}
 p{
 	font-size: 18px;
+}
+.site-logo{
+	font-family: engravers !important;
 }
 #primary-menu ul li > a{
     padding: 19px 14px;
