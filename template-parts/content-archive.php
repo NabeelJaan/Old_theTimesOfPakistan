@@ -1,7 +1,9 @@
-<div class="mb-8 md:flex">
+
+
+<div class="mb-6 md:flex bg-white shadow p-2">
     <div class="md:w-3/6 md:mr-8">
         <a href="<?php the_permalink(); ?>">
-            <?php the_post_thumbnail('post-cover-image', ['class' => 'xs:w-full']); ?>
+            <?php the_post_thumbnail('lp-img', ['class' => 'w-full']); ?>
         </a>
     </div>
     <div class="md:w-3/6">

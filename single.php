@@ -6,7 +6,7 @@
 
         <div class="lg:flex">
 
-            <div class="lg:w-3/3 border border-grey-100 p-4 lg:mr-4 xl:mr-8">
+            <div class="lg:w-3/3 border rounded shadow bg-white border-grey-100 p-4 lg:mr-4 xl:mr-8">
 
                 <div class="md:items-center mb-8">
                     
@@ -25,7 +25,7 @@
 
                 <!-- sidebar -->
                 <div class="lg:w-1/03"> <!-- col-2 -->
-                 <div class="border border-grey-100 my-4 md:my-0 p-4">
+                 <div class="border rounded shadow bg-white border-grey-100 my-4 md:my-0 p-4">
                      <h2 class="font-semibold font-Jost border-b-2 border-green pb-2">Follow Us</h2>
                      <div class="grid grid-flow-col grid-cols-2 grid-rows-2 gap-2.5 my-4">
 						 <a href="#">
@@ -76,7 +76,7 @@
                  </div> -->
 			
 			
-                 <div class="border border-grey-100 p-4 mt-8">
+                 <div class="border rounded shadow bg-white border-grey-100 p-4 mt-8">
                      <h2 class="font-semibold border-b-2 border-green pb-2 mb-4">Most Viewed</h2>
                     <div>
 						<?php get_sidebar(); ?>

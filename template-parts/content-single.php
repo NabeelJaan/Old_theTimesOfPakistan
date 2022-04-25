@@ -51,53 +51,6 @@
 			?>
 		</div>
 
-		<div class="xs:mt-3 xs:mb-12 md:my-8 bg-green max-w-6xl h-px m-auto"></div>
-
-		<div class="space-x-4 md:mt-6">
-			<div class="py-2 border border-gray-300 items-center inline-flex">
-				<div class="text-sm border-r px-4">
-					<i class="fas fa-share-alt"></i>
-				</div>
-				<div class="text-xs px-4 font-medium">
-					Share
-				</div>
-			</div>
-			<a class="py-2 border border-gray-300 items-center inline-flex" href="#">
-				<div class="text-sm border-r px-4 text-dark-blue">
-					<i class="fab fa-facebook"></i>
-				</div>
-				<div class="text-xs px-4 font-medium text-dark-blue">
-					Facebook
-				</div>
-			</a>
-			<a class="py-2 border border-gray-300 items-center inline-flex" href="#">
-				<div class="text-sm border-r px-4 text-light-blue">
-					<i class="fab fa-twitter"></i>
-				</div>
-				<div class="text-xs px-4 font-medium text-light-blue">
-					Twitter
-				</div>
-			</a>
-			<a class="py-2 border border-gray-300 items-center inline-flex" href="#">
-				<div class="text-sm border-r px-4 text-light-green">
-					<i class="fab fa-whatsapp"></i>
-				</div>
-				<div class="text-xs px-4 font-medium text-light-green">
-					WhatsApp
-				</div>
-			</a>
-			<a class="py-2 border border-gray-300 items-center inline-flex" href="#">
-				<div class="text-sm border-r px-4 text-blue-7">
-					<i class="fab fa-linkedin"></i>
-				</div>
-				<div class="text-xs px-4 font-medium text-blue-7">
-					LinkedIn
-				</div>
-			</a>
-		</div>
-
-		<div class="xs:mt-3 xs:mb-12 md:my-8 bg-green max-w-6xl h-px m-auto"></div>
-
 	</div> <!-- End col-1 -->
 
 </article>

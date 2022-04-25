@@ -6,8 +6,8 @@
 <section id="<?php echo esc_attr($id); ?>" class="px-2 xl:px-0 pb-16">
     <div class="md:max-w-6xl md:mx-auto"> <!-- container -->
         <div class="lg:flex">
-            <div class="lg:w-3/3 border bg-white rounded shadow border-grey-100 p-4 md:mr-6 lg:mr-4 xl:mr-8">
-                <h2 class="font-bold font-Roboto text-3xl border-b-2 border-green mb-8 pb-2"><?php the_field('section_title_lp'); ?></h2>
+            <div class="lg:w-3/3 md:mr-6 lg:mr-4 xl:mr-8">
+                <h2 class="font-bold font-Roboto text-3xl border-b-2 border-green mb-5 p-2 bg-white"><?php the_field('section_title_lp'); ?></h2>
 
                     <?php
                         $args = array(
@@ -24,7 +24,7 @@
                             $ex_id = get_the_ID();
                     ?>
 
-                    <div class="f-hidden md:flex md:items-center mb-8"> <!-- col-1 -->
+                    <div class="f-hidden shadow bg-white p-2 md:flex md:items-center mb-5"> <!-- col-1 -->
                         <div class="md:w-3/6 md:mr-8"> 
                             <a href="<?php the_permalink(); ?>">
                                 <?php the_post_thumbnail('lp-img', ['class' => 'w-full']); ?>
@@ -52,14 +52,14 @@
                     endif;
                     ?>
 
-                <a id="loadMore" class="transition ease-in-out duration-500 text-center font-bold text-xl leading-0 border border-green block py-2 px-6 hover:bg-green hover:text-white" href="<?php the_permalink(); ?>">Load More</a>
+                <a id="loadMore" class="transition ease-in-out duration-500 text-center font-bold text-xl bg-green text-white shadow leading-0 border border-green block py-2 px-6 hover:bg-white hover:text-green" href="<?php the_permalink(); ?>">Load More</a>
             </div>
             
 
 
             <div class="lg:w-1/03"> <!-- col-2 -->
 
-                 <div class="border rounded bg-white shadow border-grey-100 my-4 md:my-0 p-4">
+                 <div class="border bg-white shadow border-grey-100 my-4 md:my-0 p-4">
                      <h2 class="font-semibold font-Jost border-b-2 border-green pb-2">Follow Us</h2>
                      <div class="grid grid-flow-col grid-cols-2 grid-rows-2 gap-2.5 my-4">
                          <a href="#">
@@ -111,7 +111,7 @@
                  </div> -->
 
 
-                 <div class="border border-grey-100 shadow rounded bg-white p-4 mt-8">
+                 <div class="border border-grey-100 shadow bg-white p-4 mt-8">
                      <h2 class="font-semibold border-b-2 border-green pb-2 mb-4">Most Viewed</h2>
                     <div>
 						<?php get_sidebar(); ?>
