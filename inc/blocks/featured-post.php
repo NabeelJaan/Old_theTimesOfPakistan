@@ -4,7 +4,7 @@
     $featured_posts = get_field('number_of_posts-fp');
 ?>
 
-<section id="<?php echo esc_attr($id); ?>" class="px-2 xl:px-0 xl:pt-4 pb-30">
+<section id="<?php echo esc_attr($id); ?>" class="bg-white px-2 xl:px-0 xl:pt-4 pb-30">
 
     <div class="md:max-w-6xl md:mx-auto"> <!-- container div -->
         <div class="md:flex"> <!-- Start of Main div -->
@@ -14,7 +14,7 @@
                         'post_type'         =>  'post',
                         'posts_per_page'    =>  1,
                         'post_status'       =>  'publish',
-						'cat'               =>   10,
+						'cat'               =>   9,
                     );
                     $the_query = new WP_Query( $args );
                     $i = 1;
@@ -67,7 +67,7 @@
                 <?php
                     $args = array(
                         'post_type'         =>  'post',
-                        'cat'               =>   10,
+                        'cat'               =>   9,
                         'posts_per_page'    =>   4,
                         'post_status'       =>  'publish',
                         'offset'			=>  1

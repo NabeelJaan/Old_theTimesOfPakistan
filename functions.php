@@ -10,10 +10,13 @@ function tailpress_enqueue_scripts() {
 	wp_enqueue_style( 'FontAwesome', '//pro.fontawesome.com/releases/v5.10.0/css/all.css', array(), '5.10.0' );
 	wp_enqueue_style( 'GoogleFonts', '//fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&display=swap', array(), '' );
 	wp_enqueue_style( 'customstyle', get_template_directory_uri() . '/style.css', array(), '1.0' );
+	wp_enqueue_style('OwlCarousel', get_template_directory_uri() . '/assets/owlcarousel/css/owl.carousel.min.css' );
+	wp_enqueue_style('OwlCarouselTheme', get_template_directory_uri() . '/assets/owlcarousel/css/owl.theme.default.css' );
 
 
  	wp_enqueue_script( 'jquery' );
 
+	wp_enqueue_script( 'OwlCarouseljs', get_template_directory_uri() . '/assets/owlcarousel/js/owl.carousel.min.js', array('jquery'), true );
 	wp_enqueue_script( 'tailpress', tailpress_get_mix_compiled_asset_url( 'js/app.js' ), array(), $theme->get( 'Version' ) );
 
 }
@@ -308,6 +311,25 @@ function ttop_set_post_views($postID) {
 remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0);
 
 
+/*
+    ==========================================
+    Include files
+    ==========================================
+*/
+
+
+if( function_exists('acf_add_options_page') ) {
+
+	acf_add_options_page();
+
+	acf_add_options_sub_page( 'Header' );
+    
+	acf_add_options_sub_page( 'Footer' );
+    
+}
+
+
+
 
 /*
 	==========================================
@@ -359,6 +381,62 @@ function techBasket_acf_block() {
 				'title'             => __('MostViewedPosts'),
 				'description'       => __('A custom block for Latest Post'),
 				'render_template'   => 'inc/blocks/mvp.php',
+				'category'          => 'techbasket',
+				'icon'				=> 'admin-comments',
+				'keywords'			=> array( '', '' ),
+        	)
+		);
+
+		// Rgister for visual stories
+		
+		acf_register_block_type(
+			array(
+				'name'              => __('Visual Stories'),
+				'title'             => __('Visual Stories'),
+				'description'       => __('A custom block for Visual Stories'),
+				'render_template'   => 'inc/blocks/visual-stories.php',
+				'category'          => 'techbasket',
+				'icon'				=> 'admin-comments',
+				'keywords'			=> array( '', '' ),
+        	)
+		);
+
+		// Rgister for Life & Style
+		
+		acf_register_block_type(
+			array(
+				'name'              => __('Life Style'),
+				'title'             => __('Life Style'),
+				'description'       => __('A custom block for Life Style'),
+				'render_template'   => 'inc/blocks/life-style.php',
+				'category'          => 'techbasket',
+				'icon'				=> 'admin-comments',
+				'keywords'			=> array( '', '' ),
+        	)
+		);
+
+		// Rgister for Sports
+		
+		acf_register_block_type(
+			array(
+				'name'              => __('Sports'),
+				'title'             => __('Sports'),
+				'description'       => __('A custom block for Life Style'),
+				'render_template'   => 'inc/blocks/sports.php',
+				'category'          => 'techbasket',
+				'icon'				=> 'admin-comments',
+				'keywords'			=> array( '', '' ),
+        	)
+		);
+
+		// Rgister for Entertainment
+		
+		acf_register_block_type(
+			array(
+				'name'              => __('Entertainment'),
+				'title'             => __('Entertainment'),
+				'description'       => __('A custom block for Life Style'),
+				'render_template'   => 'inc/blocks/entertainment.php',
 				'category'          => 'techbasket',
 				'icon'				=> 'admin-comments',
 				'keywords'			=> array( '', '' ),
